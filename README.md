@@ -11,9 +11,25 @@ el-tree 支持虚拟滚动
 #### 第一步 安装依赖
 ``npm i vue-virtual-scroll-list``
 
-#### 第二步 引入组件
-``import el-virtual-tree from 'el-virtual-tree'``
+#### 第二步 导入组件
+在你的项目组件目录中（一般为``src/components``）新建文件夹``el-virtual-tree``，
+将本项目所有文件粘贴至该文件夹
 
+按需引入
+
+``import elVirtualTree from '@/src/components/el-virtual-tree'``
+
+vue components引入组件``components: { elVirtualTree }``
+
+或者全局引入
+````
+import Vue from 'vue';
+import ElVirtualTree from '@/src/components/el-virtual-tree;
+
+Vue.use(ElVirtualTree)
+````
+
+### 使用说明
 设置组件高度``height``属性开启虚拟滚动，否则不开启。
 
 ``height``属性为字符类型，需自带单位，例：``height="300px"`` ``height="calc(100vh - 200px)"``

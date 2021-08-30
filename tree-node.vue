@@ -144,6 +144,10 @@ export default {
   },
 
   methods: {
+    getNodeKey(node) {
+      return getNodeKey(this.tree.nodeKey, node.data);
+    },
+
     handleDragStart(event) {
       if (!this.tree.draggable) return;
       this.tree.$emit('tree-node-drag-start', event, this);
