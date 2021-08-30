@@ -17,9 +17,9 @@ el-tree 支持虚拟滚动
 
 按需引入
 
-``import elVirtualTree from '@/src/components/el-virtual-tree'``
+``import ElVirtualTree from '@/src/components/el-virtual-tree'``
 
-vue components引入组件``components: { elVirtualTree }``
+vue components引入组件``components: { ElVirtualTree }``
 
 或者全局引入
 ````
@@ -40,10 +40,6 @@ Vue.use(ElVirtualTree)
 :data="treeData"
 node-key="id"
 height="calc(100vh - 210px)" // 设置该属性则开启虚拟滚动
-draggable
-@node-click="nodeClick"
-@node-drag-start="nodeDragStart"
-@node-drop="nodeDrop"
 >
 ...
 </el-virtual-tree>

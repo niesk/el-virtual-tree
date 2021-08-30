@@ -1,6 +1,6 @@
 {
   "name": "el-virtual-tree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Component for element-ui",
   "main": "index.js",
   "scripts": {
